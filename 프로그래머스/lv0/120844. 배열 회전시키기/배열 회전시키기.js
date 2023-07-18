@@ -5,7 +5,7 @@ function solution(numbers, direction) {
       if (direction === 'right') {
           A.push(numbers.splice(-1))
            B.push(numbers.splice(i))
-      } else if (direction === 'left') {
+      } else {
           A.push(numbers.splice(1))
             B.push(numbers.splice(i))
       }
