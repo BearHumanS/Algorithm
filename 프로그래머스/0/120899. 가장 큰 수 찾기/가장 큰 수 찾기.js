@@ -1,3 +1,4 @@
+/*
 function solution(array) {
     let higher = [...array].sort((a,b) => b-a)
     let location;
@@ -9,4 +10,9 @@ function solution(array) {
     }
     
     return [higher[0], location]
+}
+*/
+
+const solution = (array) => {
+    return [Math.max(...array), array.indexOf(Math.max(...array))]
 }
