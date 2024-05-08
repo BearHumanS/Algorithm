@@ -3,7 +3,7 @@ function solution(cipher, code) {
     
     let b = []
     
-    for (let i = 0; i < a.length; i++) {
+    for (let i = code - 1; i < a.length; i+=code) {
         if ((i + 1) % code === 0) {
             b.push(a[i])
         }
