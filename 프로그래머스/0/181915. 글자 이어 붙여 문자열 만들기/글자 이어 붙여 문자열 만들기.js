@@ -1,9 +1,9 @@
 function solution(my_string, index_list) {
-    let answer = []
+    let answer = ''
     
     for (let i = 0; i < index_list.length; i++) {
-        answer.push([...my_string][index_list[i]])
+        answer+= ([...my_string][index_list[i]])
     }
     
-    return answer.join('')
+    return answer
 }
