@@ -1,4 +1,5 @@
 function solution(todo_list, finished) {
+   /*
     let answer = []
     
     for (let i = 0; i < todo_list.length; i++) {
@@ -7,4 +8,6 @@ function solution(todo_list, finished) {
         }
     }
     return answer
+    */
+    return todo_list.filter((_, i) => !finished[i])
 }
