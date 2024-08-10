@@ -10,7 +10,8 @@ function solution(t, p) {
         answer.push(temp)
     }
     
+    const result = answer.map(e => e <= p).filter(x => x === true).length
     
-    return answer.map(e => e <= p).filter(x => x === true).length
+    return result
 }
 
